@@ -819,7 +819,7 @@ sed -e 's/{{NAMESPACE}}/gitlab-course/g' -e "s~{{API_IMAGE}}~registry.gitlab.com
 ```bash
 kubectl rollout restart deployment gitlab-course-api -n gitlab-course
 ```
-Затем потребуется выполнить `kubectl apply` ещё раз, указав sha256 явно, добавив к имени образа конструкцию `@sha256:<hash>`.
+Потребуется выполнить `kubectl apply` ещё раз, указав sha256 явно, добавив к имени образа конструкцию `@sha256:<hash>`.
 
 #### Развёртывание Ingress
 
