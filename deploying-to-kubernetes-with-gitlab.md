@@ -814,7 +814,7 @@ Make sure the resources were created successfully.
 ```bash
 kubectl rollout restart deployment gitlab-course-api -n gitlab-course
 ```
-I our cae, you will need to execute `kubectl apply` again, specifying sha256 explicitly adding the construction `@sha256:<hash>` to the image name.
+In our cae, you will need to execute `kubectl apply` again, specifying sha256 explicitly adding the construction `@sha256:<hash>` to the image name.
 
 #### Deploying Ingress
 
