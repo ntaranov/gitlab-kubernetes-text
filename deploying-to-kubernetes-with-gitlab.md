@@ -270,6 +270,11 @@ Let's create a directory where we will store Kubernetes resource files. Go to th
 mkdir kubernetes
 ```
 
+Create `gitlab-course` namespace
+```bash
+kubectl create namespace gitlab-course
+```
+
 🛠️ Let's start with **SPA**. Let's add the file `./kubernetes/spa.yml` with the following code.
 
 ```yaml
