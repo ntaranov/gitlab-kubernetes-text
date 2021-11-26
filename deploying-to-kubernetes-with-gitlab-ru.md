@@ -270,7 +270,10 @@ docker run -it --publish 80:80 gitlab-course-spa
 mkdir kubernetes
 ```
 
-Наше приложение развёрнутое в Kubernetes в Docker Desktop будет выглядеть так.
+Создадим namespace gitlab-course
+```bash
+kubectl create namespace gitlab-course
+```
 
 🛠️ Начнём с **SPA**. Добавим файл `./kubernetes/spa.yml` с таким кодом.
 
