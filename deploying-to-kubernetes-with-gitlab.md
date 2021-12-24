@@ -235,7 +235,7 @@ Make sure the build completed successfully.
 
 🛠️ Use the following command to start a container based on the newly created image.
 ```bash
-docker run -it --publish 80:80 gitlab-course-spa
+docker run --publish 80:80 -d gitlab-course-spa
 ```
 
 If port `80` is already taken on your computer, you can publish this container port on a different host port, for example, `-p 8080:80`.
